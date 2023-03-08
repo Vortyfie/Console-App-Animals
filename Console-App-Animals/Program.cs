@@ -1,17 +1,22 @@
-﻿using Console_App_Animals;
+﻿using CSharpAnimal.Models.Animals;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Animal chien = new Animal();
-        Animal chat = new Animal("TOTO");
+        Griffin myAnimal = new Griffin();
 
-        chien.Sleep();
-        chat.Sleep();
+        myAnimal.Sleep();
+        myAnimal.Move();
+        Console.WriteLine(myAnimal.griffinName);
 
-        Console.WriteLine();
-        Console.ReadLine();
+
+        Dragon myAnimal2 = new Dragon();
+
+        myAnimal2.Sleep();
+        myAnimal2.Move();
+        Console.WriteLine(myAnimal2.dragonName);
 
     }
+
 }
